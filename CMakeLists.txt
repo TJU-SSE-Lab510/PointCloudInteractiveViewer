@@ -3,8 +3,7 @@ project(PCLDemo)
 
 set(CMAKE_CXX_STANDARD 11)
 # set source files
-set(SOURCE_FILES Sources/main.cpp Headers/newpaper.h Headers/reader.h Sources/CustomSignal.cpp Headers/CustomSignal.h)
-set(HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/Headers)
+set(SOURCE_FILES Sources/main.cpp Sources/CustomSignal.cpp Sources/mainwindow.cpp Sources/ui_mainwindow.h Sources/CustomSignal.h Sources/mainwindow.h Sources/newpaper.h Sources/reader.h)
 # cmake config <package>_DIR
 set(PCL_DIR "/usr/local/Cellar/pcl/1.8.1_2/share/pcl-1.8")
 #PCL config
