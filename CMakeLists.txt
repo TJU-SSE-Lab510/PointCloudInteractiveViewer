@@ -3,7 +3,7 @@ project(PCLDemo)
 
 set(CMAKE_CXX_STANDARD 11)
 # set source files
-set(SOURCE_FILES Sources/main.cpp Headers/newpaper.h Headers/reader.h)
+set(SOURCE_FILES Sources/main.cpp Sources/CustomSignal.cpp Sources/mainwindow.cpp Headers/CustomSignal.h Headers/mainwindow.h Headers/newpaper.h Headers/reader.h)
 set(HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/Headers)
 # cmake config <package>_DIR
 set(PCL_DIR "/usr/local/Cellar/pcl/1.8.1_2/share/pcl-1.8")
@@ -20,7 +20,7 @@ set(CMAKE_PREFIX_PATH ${QT_HOME})
 SET(PROJECT_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 set(CMAKE_INCLUDE_CURRENT_DIR on)
 set(CMAKE_AUTOMOC on)
-set(CMAKE_AUTOUIC on)
+#set(CMAKE_AUTOUIC on)
 set(CMAKE_AUTORCC on)
 ###这里根据Project的实际情况来添加需要的模块
 find_package(Qt5 COMPONENTS Core Widgets UiTools Xml Network Qml Quick REQUIRED)
