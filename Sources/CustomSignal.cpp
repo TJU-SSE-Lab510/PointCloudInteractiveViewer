@@ -2,9 +2,9 @@
 // Created by 杜盛瑀 on 2018/2/8.
 //
 
-#include "Headers/CustomSignal.h"
-#include "Headers/newpaper.h"
-#include "Headers/reader.h"
+#include "CustomSignal.h"
+#include "newpaper.h"
+#include "reader.h"
 void CustomSignal:: mysignal()
 {
     Newspaper newspaper("Newspaper A");
