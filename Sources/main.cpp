@@ -1,7 +1,7 @@
 #include <QApplication>
 #define RUN 1
 #if RUN == 1
-#include "mainwindow.h"
+#include "Headers/mainwindow.h"
 #else
 #include "CustomSignal.h"
 #endif
