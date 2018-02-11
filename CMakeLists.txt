@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(SOURCE_FILES Sources/main.cpp Headers/newpaper.h Headers/reader.h)
 set(HEADER_FILES ${CMAKE_CURRENT_SOURCE_DIR}/Headers)
 # cmake config <package>_DIR
-set(PCL_DIR "/usr/local/Cellar/pcl/1.8.1_2/share/pcl-1.8")
+#set(PCL_DIR "/usr/local/Cellar/pcl/1.8.1_2/share/pcl-1.8")
 #PCL config
 find_package(PCL 1.8 REQUIRED)
 include_directories(${HEADER_FILES} ${PCL_INCLUDE_DIRS})
@@ -15,8 +15,8 @@ add_definitions(${PCL_DEFINITIONS})
 
 #Qt config
 #对应的Qt的安装目录
-set(QT_HOME "/Users/arlex/Qt/5.8/clang_64")
-set(CMAKE_PREFIX_PATH ${QT_HOME})
+#set(QT_HOME "/Users/arlex/Qt/5.8/clang_64")
+#set(CMAKE_PREFIX_PATH ${QT_HOME})
 SET(PROJECT_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 set(CMAKE_INCLUDE_CURRENT_DIR on)
 set(CMAKE_AUTOMOC on)
