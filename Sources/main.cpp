@@ -20,15 +20,20 @@
 //}
 
 
+
+#include "pclvisualizer.h"
 #include "pclviewer.h"
-#include <QApplication>
+#include <QtWidgets/QApplication>
 #include <QMainWindow>
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-    QApplication a (argc, argv);
-    PCLViewer w;
-    w.show ();
+    QApplication a(argc, argv);
+    PCLVisualizer w;
+    
+// First Demo from https://github.com/UnaNancyOwen/qt_visualizer
+//    PCLViewer w;
 
-    return a.exec ();
+    w.show();
+    return a.exec();
 }
